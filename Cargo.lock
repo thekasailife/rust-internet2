@@ -544,7 +544,7 @@ dependencies = [
 
 [[package]]
 name = "inet2_addr"
-version = "0.5.0"
+version = "0.6.0"
 dependencies = [
  "amplify",
  "ed25519-dalek",
@@ -560,7 +560,7 @@ dependencies = [
 
 [[package]]
 name = "inet2_derive"
-version = "0.5.0"
+version = "0.6.0"
 dependencies = [
  "amplify",
  "internet2",
@@ -583,7 +583,7 @@ dependencies = [
 
 [[package]]
 name = "internet2"
-version = "0.5.0"
+version = "0.6.0"
 dependencies = [
  "amplify",
  "bitcoin_hashes",
