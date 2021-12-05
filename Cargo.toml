@@ -23,8 +23,8 @@ crate-type = ["rlib", "staticlib"]
 # Dependencies on other LNP/BP repositories
 # -----------------------------------------
 amplify = "3.9.1"
-strict_encoding = { version = "1.7", default-features = false, features = ["derive"] }
-lightning_encoding = "0.5.0"
+strict_encoding = { version = "1.8.0", git = "https://github.com/LNP-BP/client_side_validation", branch = "develop", default-features = false, features = ["derive"] }
+lightning_encoding = { version = "0.6.0", git = "https://github.com/LNP-BP/lnp-core", branch = "v0.6" }
 inet2_addr = { version = "0.6.0", features = ["strict_encoding", "stringly_conversions"], path = "./addr" }
 inet2_derive = { version = "0.6.0", default-features = false, optional = true, path = "./derive" }
 # Dependencies on core rust-bitcoin & cryptography
@@ -49,7 +49,7 @@ url = { version = "2", optional = true }
 
 [dev-dependencies]
 torut = "0.2.0"
-strict_encoding_test = "1.7.4"
+strict_encoding_test = { version = "1.7.3", git = "https://github.com/LNP-BP/client_side_validation", branch = "develop" }
 
 [target.'cfg(target_os="android")'.dependencies]
 zmq = { version = "0.9", features = ["vendored"], optional = true }
